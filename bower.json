@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
-    "font-awesome": "~4.0.3",
+    "font-awesome": "~4.0.3"
   }
 }
