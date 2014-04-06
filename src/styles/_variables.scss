@@ -1,0 +1,46 @@
+/**
+ * @author    Justin Lau <justin@tclau.com>
+ * @copyright Copyright (c) 2014 Justin Lau <justin@tclau.com>
+ * @license   The MIT License (MIT)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+@import "../components/bootstrap-sass/vendor/assets/stylesheets/bootstrap/variables";
+@import "../components/bootstrap-sass/vendor/assets/stylesheets/bootstrap/mixins";
+@import "../components/font-awesome/scss/variables";
+
+$iconpicker-dropdown-menu-padding-h: 0.5em !default;
+$iconpicker-dropdown-menu-padding-v: $iconpicker-dropdown-menu-padding-h !default;
+$iconpicker-dropdown-menu-padding: $iconpicker-dropdown-menu-padding-v $iconpicker-dropdown-menu-padding-h !default;
+$iconpicker-button-width: 2.5em !default;
+$iconpicker-button-height: $iconpicker-button-width !default;
+$iconpicker-button-margin-h: 0.1em !default;
+$iconpicker-button-margin-v: $iconpicker-button-margin-h !default;
+$iconpicker-button-margin: $iconpicker-button-margin-v $iconpicker-button-margin-h !default;
+$iconpicker-button-padding-h: 0 !default;
+$iconpicker-button-padding-v: $iconpicker-button-padding-h !default;
+$iconpicker-button-padding: $iconpicker-button-padding-v $iconpicker-button-padding-h !default;
+$iconpicker-cols-xs: 4 !default;
+$iconpicker-cols-sm: 5 !default;
+$iconpicker-cols-md: 8 !default;
+$iconpicker-cols-lg: 12 !default;
+$iconpicker-rows-xs: 4 !default;
+$iconpicker-rows-sm: 5 !default;
+$iconpicker-rows-md: 8 !default;
+$iconpicker-rows-lg: 8 !default;

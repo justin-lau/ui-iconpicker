@@ -1,0 +1,40 @@
+{
+  "name": "ui-iconpicker",
+  "description": "A Bootstrap 3 Icon Picker implemented in AngularJS",
+  "version": "0.1.0",
+  "keywords": [
+    "Bootstrap",
+    "Font Awesome",
+    "Iconpicker",
+    "AngularJS"
+  ],
+  "bugs": {
+    "url": "https://github.com/justin-lau/ui-iconpicker/issues",
+    "email": "justin@tclau.com"
+  },
+  "license": "MIT",
+  "auther": {
+    "name": "Justin Lau",
+    "email": "justin@tclau.com",
+    "url": "http://tclau.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justin-lau/ui-iconpicker"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=0.10.25"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-bump": "git://github.com/gruntjs/grunt-contrib-bump",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-requirejs": "~0.4.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-replace": "~0.7.6"
+  }
+}
