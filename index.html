@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular UI Bootstrap Iconpicker</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//rawgithub.com/angular/code.angularjs.org/master/1.2.16/angular-csp.css">
+	<link rel="stylesheet" href="//rawgithub.com/angular/code.angularjs.org/master/1.2.16/docs/components/google-code-prettify-1.0.1/src/prettify.css">
+	<link rel="stylesheet" href="//rawgithub.com/angular/code.angularjs.org/master/1.2.16/docs/css/prettify-theme.css">
+	<link rel="stylesheet" href="//rawgithub.com/justin-lau/ui-iconpicker/v0.1.0/dist/styles/ui-iconpicker.min.css">
+	<style type="text/css">
+		/* display line numbers on every lines in prettyprint */
+		.prettyprint li.L0,
+		.prettyprint li.L1,
+		.prettyprint li.L2,
+		.prettyprint li.L3,
+		.prettyprint li.L5,
+		.prettyprint li.L6,
+		.prettyprint li.L7,
+		.prettyprint li.L8 {
+			list-style-type: decimal !important
+		}
+	</style>
+	<!-- /styles -->
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1><p>Angular UI Bootstrap Iconpicker</p><p><small>Created by Justin Lau</small></p></h1>
+		</div>
+
+		<div class="form-gorup">
+			<ul class="list-inline text-center">
+				<li><a href="https://github.com/justin-lau/ui-bootstrap-iconpicker"><i class="fa fa-4x fa-github"></i></a></li>
+				<li><a href="https://www.gittip.com/justin-lau"><i class="fa fa-4x fa-gittip"></i></a></li>
+			</ul>
+		</div>
+
+		<section>
+			<h2>Normal Usage</h2>
+
+			<div class="form-group">
+				<ui-iconpicker ng-model="iconClass"></ui-iconpicker>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" ng-model="iconClass" />
+			</div>
+
+		<pre class="prettyprint linenums">&lt;div class="form-group"&gt
+  &lt;ui-iconpicker ng-model="iconClass"&gt&lt;/ui-iconpicker&gt
+&lt;/div&gt
+
+&lt;div class="form-group"&gt
+  &lt;input class="form-control" type="text" ng-model="iconClass" /&gt
+&lt;/div&gt</pre>
+
+		</section>
+		<hr />
+
+		<section>
+			<h2>Using with Default Values</h2>
+
+			<div class="form-group">
+				<ui-iconpicker value="glyphicon glyphicon-heart"></ui-iconpicker>
+				<ui-iconpicker value="glyphicon glyphicon-star"></ui-iconpicker>
+			</div>
+
+			<pre class="prettyprint linenums">&lt;div class="form-group"&gt;
+  &lt;ui-iconpicker value="glyphicon glyphicon-heart"&gt;&lt;/ui-iconpicker&gt;
+  &lt;ui-iconpicker value="glyphicon glyphicon-star"&gt;&lt;/ui-iconpicker&gt;
+&lt;/div&gt;</pre>
+
+		</section>
+		<hr />
+
+		<section>
+			<h2>Input Group</h2>
+
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<ui-iconpicker ng-model="iconClass"></ui-iconpicker>
+					</span>
+					<input class="form-control" type="text" ng-model="iconClass" />
+				</div>
+			</div>
+
+			<pre class="prettyprint linenums">&lt;div class="form-group"&gt
+  &lt;div class="input-group"&gt
+    &lt;span class="input-group-btn"&gt
+      &lt;ui-iconpicker ng-model="iconClass"&gt&lt;/ui-iconpicker&gt
+    &lt;/span&gt
+    &lt;input class="form-control" type="text" ng-model="iconClass" /&gt
+  &lt;/div&gt
+&lt;/div&gt</pre>
+
+		</section>
+		<hr />
+
+		<section>
+			<h2>With Styles</h2>
+			
+			<div class="form-group">
+				<ui-iconpicker class="brand-default"></ui-iconpicker>
+				<ui-iconpicker class="brand-primary"></ui-iconpicker>
+				<ui-iconpicker class="brand-success"></ui-iconpicker>
+				<ui-iconpicker class="brand-info"></ui-iconpicker>
+				<ui-iconpicker class="brand-warning"></ui-iconpicker>
+				<ui-iconpicker class="brand-danger"></ui-iconpicker>
+			</div>
+
+		<pre class="prettyprint linenums">&lt;div class="form-group"&gt
+  &lt;ui-iconpicker class="brand-default"&gt&lt;/ui-iconpicker&gt
+  &lt;ui-iconpicker class="brand-primary"&gt&lt;/ui-iconpicker&gt
+  &lt;ui-iconpicker class="brand-success"&gt&lt;/ui-iconpicker&gt
+  &lt;ui-iconpicker class="brand-info"&gt&lt;/ui-iconpicker&gt
+  &lt;ui-iconpicker class="brand-warning"&gt&lt;/ui-iconpicker&gt
+  &lt;ui-iconpicker class="brand-danger"&gt&lt;/ui-iconpicker&gt
+&lt;/div&gt</pre>
+
+		</section>
+		<hr />
+
+		<section>
+			<h2>Using in Forms</h2>
+
+			<form action="#" method="GET">
+				<div class="form-group">
+					<ui-iconpicker name="icon_class"></ui-iconpicker>
+					<button class="btn btn-default" type="submit">Test</button>
+					<p class="help-block">Tips: watch the query parameters on the page url</p>
+				</div>
+			</form>
+
+		<pre class="prettyprint linenums">&lt;form action="#" method="GET"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;ui-iconpicker name="icon_class"&gt;&lt;/ui-iconpicker&gt;
+    &lt;button class="btn btn-default" type="submit"&gt;Test&lt;/button&gt;
+    &lt;p class="help-block"&gt;Tips: watch the query parameters on the page url&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+
+		</section>
+		<hr />
+
+		<section>
+			<h2>Using with Font Awesome</h2>
+
+			<div class="form-group">
+				<ui-iconpicker groups="font-awesome"></ui-iconpicker>
+				<p class="help-block">Using Font Awesome Icons only</p>
+			</div>
+
+			<div class="form-group">
+				<ui-iconpicker groups="font-awesome" value="fa fa-heart-o fa-lg"></ui-iconpicker>
+				<p class="help-block">With default value</p>
+			</div>
+
+			<div class="form-group">
+				<ui-iconpicker groups="bootstrap font-awesome"></ui-iconpicker>
+				<p class="help-block">Using Bootstrap and Font Awesome Icons</p>
+			</div>
+
+			<pre class="prettyprint linenums">&lt;div class="form-group"&gt;
+  &lt;ui-iconpicker groups="font-awesome"&gt;&lt;/ui-iconpicker&gt;
+  &lt;p class="help-block"&gt;Using Font Awesome Icons only&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;ui-iconpicker groups="font-awesome" value="fa fa-heart-o fa-lg"&gt;&lt;/ui-iconpicker&gt;
+  &lt;p class="help-block"&gt;With default value&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;ui-iconpicker groups="bootstrap font-awesome"&gt;&lt;/ui-iconpicker&gt;
+  &lt;p class="help-block"&gt;Using Bootstrap and Font Awesome Icons&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+		</section>
+
+	</div>
+	<!-- scripts -->
+	<script type="text/javascript" data-main="main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+	<!-- /scripts -->
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-49750808-1', 'github.com');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
