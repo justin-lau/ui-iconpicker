@@ -86,7 +86,6 @@ module.exports = (grunt) ->
 			options:
 				filepaths    : [
 					'bower.json'
-					'composer.json'
 					'package.json'
 				]
 				syncVersions : true
