@@ -1,7 +1,7 @@
 {
   "name": "ui-iconpicker",
   "description": "A Bootstrap 3 Icon Picker implemented in AngularJS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "Bootstrap",
     "Font Awesome",
@@ -22,7 +22,6 @@
     "type": "git",
     "url": "https://github.com/justin-lau/ui-iconpicker"
   },
-  "private": true,
   "engines": {
     "node": ">=0.10.25"
   },
