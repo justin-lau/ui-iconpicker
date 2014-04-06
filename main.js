@@ -31,7 +31,7 @@ require.config({
 		'angular': '//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min',
 		'angular-bootstrap': '//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min',
 		'prettify': '//raw.githubusercontent.com/angular/code.angularjs.org/master/1.2.16/docs/components/google-code-prettify-1.0.1/src/prettify',
-		'ui-iconpicker': '//rawgithub.com/justin-lau/ui-iconpicker/v0.1.0/dist/scripts/ui-iconpicker.min',
+		'ui-iconpicker': '//rawgithub.com/justin-lau/ui-iconpicker/v0.1.1/dist/scripts/ui-iconpicker.min',
 	},
 
 	shim: {
