@@ -1,7 +1,7 @@
 {
   "name": "ui-iconpicker",
   "description": "A Bootstrap 3 Icon Picker implemented in AngularJS",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "Bootstrap",
     "Font Awesome",
