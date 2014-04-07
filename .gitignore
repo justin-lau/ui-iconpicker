@@ -1,4 +1,5 @@
 /.sass-cache
+/dist/scripts/**/*.js.map
 /node_modules
 /src/scripts/**/*.js
 /src/scripts/**/*.js.map
