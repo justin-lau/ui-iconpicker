@@ -1,0 +1,15 @@
+*/*
+
+!/.gitignore
+
+!bootstrap-sass/
+!bootstrap-sass/vendor
+bootstrap-sass/vendor/*
+!bootstrap-sass/vendor/assets
+bootstrap-sass/vendor/assets/*
+!bootstrap-sass/vendor/assets/stylesheets
+!bootstrap-sass/vendor/assets/stylesheets/**/*.scss
+
+!font-awesome
+!font-awesome/scss
+!font-awesome/scss/*.scss
