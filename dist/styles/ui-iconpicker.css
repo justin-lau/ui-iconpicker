@@ -1,7 +1,7 @@
 /**
  * ui-iconpicker
  *
- * @version   v0.1.1
+ * @version   v0.1.2
  * @author    Justin Lau <justin@tclau.com>
  * @copyright Copyright (c) 2014 Justin Lau <justin@tclau.com>
  * @license   The MIT License (MIT)

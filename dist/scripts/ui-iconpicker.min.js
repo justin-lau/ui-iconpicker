@@ -1,5 +1,5 @@
 /*
- ui-iconpicker v0.1.1
+ ui-iconpicker v0.1.2
  (c) 2014 Justin Lau http://justin-lau.github.io/ui-iconpicker/
  License: MIT
 */
