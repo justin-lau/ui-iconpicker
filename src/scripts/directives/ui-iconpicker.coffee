@@ -55,4 +55,6 @@ define "directives/ui-iconpicker", [
 						$scope.iconClass = $scope.model;
 
 				$scope.$dropdownButton = $element.find("button").eq(0);
+
+				$scope.disabled = attrs.disabled?;
 	]

@@ -161,7 +161,7 @@ module.exports = (grunt) ->
 			css_banner:
 				options :
 					patterns: [{
-						match       : /^(\/\*\*[\S\s]*\*\/)?$/m
+						match       : /^(\/\*\*[\S\s]*^ \*\/)?$/m
 						replacement : "<%= banner.full %>"
 					}]
 				files   : [{
@@ -265,7 +265,6 @@ module.exports = (grunt) ->
 		"compass:debug"
 		"coffee:debug"
 		"requirejs:debug"
-		"replace:dist"
 	]
 
 	###

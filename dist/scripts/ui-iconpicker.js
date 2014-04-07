@@ -1,7 +1,7 @@
 /**
  * ui-iconpicker
  *
- * @version   v0.1.2
+ * @version   v0.1.3
  * @author    Justin Lau <justin@tclau.com>
  * @copyright Copyright (c) 2014 Justin Lau <justin@tclau.com>
  * @license   The MIT License (MIT)
@@ -123,7 +123,7 @@
     module = angular.module("ui-iconpicker/templates/iconpicker", ["ui.bootstrap"]);
     return module.run([
       "$templateCache", function($templateCache) {
-        return $templateCache.put("templates/iconpicker.html", "<span class=\"btn-group ui-iconpicker\">\n	<button type=\"button\" class=\"btn btn-default dropdown-toggle\"><i class=\"{{ iconClass }}\"></i><span class=\"caret\"></span>\n	</button>\n	<ul class=\"dropdown-menu\" role=\"menu\">\n		<li ng-repeat=\"class in availableIconClasses\">\n			<button class=\"btn btn-default\" type=\"button\" ng-click=\"$parent.iconClass = class\"><span class=\"{{ class }}\"></span></button>\n		</li>\n	</ul>\n	<input name=\"{{ name }}\" type=\"hidden\" value=\"{{ iconClass }}\" ng-if=\"name\" />\n</span>");
+        return $templateCache.put("templates/iconpicker.html", "<span class=\"btn-group ui-iconpicker\" ng-class=\"{ disabled: disabled }\">\n	<button type=\"button\" class=\"btn btn-default dropdown-toggle\"><i class=\"{{ iconClass }}\"></i><span class=\"caret\"></span>\n	</button>\n	<ul class=\"dropdown-menu\" role=\"menu\">\n		<li ng-repeat=\"class in availableIconClasses\">\n			<button class=\"btn btn-default\" type=\"button\" ng-click=\"$parent.iconClass = class\"><span class=\"{{ class }}\"></span></button>\n		</li>\n	</ul>\n	<input name=\"{{ name }}\" type=\"hidden\" value=\"{{ iconClass }}\" ng-if=\"name\" />\n</span>");
       }
     ]);
   });
@@ -157,7 +157,8 @@
                 return $scope.iconClass = $scope.model;
               });
             }
-            return $scope.$dropdownButton = $element.find("button").eq(0);
+            $scope.$dropdownButton = $element.find("button").eq(0);
+            return $scope.disabled = attrs.disabled != null;
           }
         };
       }
