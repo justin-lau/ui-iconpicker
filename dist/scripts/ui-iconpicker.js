@@ -1,7 +1,7 @@
 /**
  * ui-iconpicker
  *
- * @version   v0.1.3
+ * @version   v0.1.4
  * @author    Justin Lau <justin@tclau.com>
  * @copyright Copyright (c) 2014 Justin Lau <justin@tclau.com>
  * @license   The MIT License (MIT)
@@ -25,7 +25,17 @@
  * SOFTWARE.
  */
 (function() {
-  define("values/icon-groups-map", ["angular"], function(angular) {
+  var umd;
+
+  umd = function(root, factory) {
+    if (typeof define === "function" && (define.amd != null)) {
+      return define("values/icon-groups-map", ["angular"], factory);
+    } else {
+      return factory(root.angular);
+    }
+  };
+
+  umd(this, function(angular) {
     var module;
     module = angular.module("ui-iconpicker/values/icon-groups-map", []);
     return module.value("iconGroupsMap", {
@@ -43,7 +53,17 @@
 }).call(this);
 
 (function() {
-  define("services/IconGroupCollection", ["angular", "values/icon-groups-map"], function(angular) {
+  var umd;
+
+  umd = function(root, factory) {
+    if (typeof define === "function" && (define.amd != null)) {
+      return define("services/IconGroupCollection", ["angular", "values/icon-groups-map"], factory);
+    } else {
+      return factory(root.angular);
+    }
+  };
+
+  umd(this, function(angular) {
     var module;
     module = angular.module("ui-iconpicker/services/IconGroupCollection", ["ui-iconpicker/values/icon-groups-map"]);
     return module.factory("IconGroupCollection", [
@@ -118,7 +138,17 @@
 }).call(this);
 
 (function() {
-  define("templates/iconpicker", ["angular", "angular-bootstrap"], function(angular) {
+  var umd;
+
+  umd = function(root, factory) {
+    if (typeof define === "function" && (define.amd != null)) {
+      return define("templates/iconpicker", ["angular", "angular-bootstrap"], factory);
+    } else {
+      return factory(root.angular);
+    }
+  };
+
+  umd(this, function(angular) {
     var module;
     module = angular.module("ui-iconpicker/templates/iconpicker", ["ui.bootstrap"]);
     return module.run([
@@ -131,7 +161,17 @@
 }).call(this);
 
 (function() {
-  define("directives/ui-iconpicker", ["angular", "services/IconGroupCollection", "templates/iconpicker"], function(angular) {
+  var umd;
+
+  umd = function(root, factory) {
+    if (typeof define === "function" && (define.amd != null)) {
+      return define("directives/ui-iconpicker", ["angular", "services/IconGroupCollection", "templates/iconpicker"], factory);
+    } else {
+      return factory(root.angular);
+    }
+  };
+
+  umd(this, function(angular) {
     var module;
     module = angular.module("ui-iconpicker/directives/ui-iconpicker", ["ui-iconpicker/services/IconGroupCollection", "ui-iconpicker/templates/iconpicker"]);
     return module.directive("uiIconpicker", [
@@ -168,7 +208,17 @@
 }).call(this);
 
 (function() {
-  define("ui-iconpicker", ["angular", "directives/ui-iconpicker"], function(angular) {
+  var umd;
+
+  umd = function(root, factory) {
+    if (typeof define === "function" && (define.amd != null)) {
+      return define("ui-iconpicker", ["angular", "directives/ui-iconpicker"], factory);
+    } else {
+      return factory(root.angular);
+    }
+  };
+
+  umd(this, function(angular) {
     return angular.module("ui-iconpicker", ["ui-iconpicker/directives/ui-iconpicker"]);
   });
 

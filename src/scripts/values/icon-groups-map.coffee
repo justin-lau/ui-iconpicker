@@ -21,10 +21,21 @@
 # SOFTWARE.
 #
 
-define "values/icon-groups-map", [
-	"angular"
-], (angular) ->
+umd = (root, factory) ->
 
+	# AMD
+	if typeof define is "function" and define.amd?
+		define("values/icon-groups-map", [
+			"angular"
+		], factory);
+
+	# Non-AMD
+	else
+		factory(root.angular);
+
+umd this, (angular) ->
+
+	# Register Angular Module
 	module = angular.module("ui-iconpicker/values/icon-groups-map", []);
 
 	module.value "iconGroupsMap",

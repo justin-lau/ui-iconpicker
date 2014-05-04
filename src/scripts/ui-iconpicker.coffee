@@ -21,11 +21,22 @@
 # SOFTWARE.
 #
 
-define "ui-iconpicker", [
-	"angular"
-	"directives/ui-iconpicker"
-], (angular) ->
+umd = (root, factory) ->
 	
+	# AMD
+	if typeof define is "function" and define.amd?
+		define("ui-iconpicker", [
+			"angular"
+			"directives/ui-iconpicker"
+		], factory);
+
+	# Non-AMD
+	else
+		factory(root.angular);
+
+umd this, (angular) ->
+
+	# Register Angular Module
 	angular.module("ui-iconpicker", [
 		"ui-iconpicker/directives/ui-iconpicker"
 	]);

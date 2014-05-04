@@ -21,15 +21,27 @@
 # SOFTWARE.
 #
 
-define "templates/iconpicker", [
-	"angular"
-	"angular-bootstrap"
-], (angular) ->
+umd = (root, factory) ->
 
+	# AMD
+	if typeof define is "function" and define.amd?
+		define("templates/iconpicker", [
+			"angular"
+			"angular-bootstrap"
+		], factory);
+
+	# Non-AMD
+	else
+		factory(root.angular);
+
+umd this, (angular) ->
+
+	# Register Angular Module
 	module = angular.module("ui-iconpicker/templates/iconpicker", [
 		"ui.bootstrap"
 	]);
 
+	# Create template into cache
 	module.run [
 		"$templateCache"
 		($templateCache) ->
