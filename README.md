@@ -1,5 +1,6 @@
 # ui-iconpicker - _Bootstrap 3 Icon Picker for AngularJS_ #
 
+[![Bower version](https://badge.fury.io/bo/ui-iconpicker.png)](http://badge.fury.io/bo/ui-iconpicker)
 [![devDependencies Status](https://david-dm.org/justin-lau/ui-iconpicker/dev-status.png)](https://david-dm.org/justin-lau/ui-iconpicker#info=devDependencies)
 
 
