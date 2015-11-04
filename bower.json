@@ -9,7 +9,7 @@
     "AngularJS"
   ],
   "license": "MIT",
-  "authers": [
+  "authors": [
     {
       "name": "Justin Lau",
       "email": "justin@tclau.com",
@@ -28,5 +28,9 @@
   "devDependencies": {
     "bootstrap-sass": "twbs/bootstrap-sass#~3.1.1",
     "font-awesome": "~4.0.3"
-  }
+  },
+  "main": [
+    "./dist/scripts/ui-iconpicker.js",
+    "./dist/styles/ui-iconpicker.css"
+  ]
 }
